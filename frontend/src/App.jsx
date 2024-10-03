@@ -1,0 +1,24 @@
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar.jsx';
+import Agriculture from './Pages/Agriculture/Agriculture.jsx';
+import Education from './Pages/Education/Education.jsx';
+import Healthcare from './Pages/Healthcare/Healthcare.jsx';
+import EconomicDevelopment from './Pages/EconomicDevelopment/EconomicDevelopment.jsx';
+
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/agriculture" element={<Agriculture />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/healthcare" element={<Healthcare />} />
+        <Route path="/economic-development" element={<EconomicDevelopment />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
