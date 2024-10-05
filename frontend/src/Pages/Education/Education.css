@@ -1,0 +1,94 @@
+/* Education.css */
+
+.education-page {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .education-header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .education-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .education-header p {
+    font-size: 1.2rem;
+  }
+  
+  .online-courses-section, .skill-development-section, .gov-schemes-section, .local-institutions-section, .contact-section {
+    margin: 40px 0;
+  }
+  
+  .online-courses-section h2, .skill-development-section h2, .gov-schemes-section h2, .local-institutions-section h2, .contact-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .courses-cards, .skill-cards, .institutions-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .gov-schemes-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .gov-schemes-section ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .contact-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .courses-cards, .skill-cards, .institutions-cards {
+      flex-direction: column;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  

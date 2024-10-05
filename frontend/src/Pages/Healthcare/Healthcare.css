@@ -1,0 +1,94 @@
+/* Healthcare.css */
+
+.healthcare-page {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .healthcare-header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .healthcare-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .healthcare-header p {
+    font-size: 1.2rem;
+  }
+  
+  .telemedicine-section, .health-education-section, .emergency-services-section, .medical-resources-section, .contact-section {
+    margin: 40px 0;
+  }
+  
+  .telemedicine-section h2, .health-education-section h2, .emergency-services-section h2, .medical-resources-section h2, .contact-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .service-cards, .education-cards, .resources-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .emergency-services-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .emergency-services-section ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .contact-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .service-cards, .education-cards, .resources-cards {
+      flex-direction: column;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  
