@@ -9,11 +9,11 @@
   }
   
   .home-header {
-    background-image: url('https://example.com/village-banner.jpg');
+    background-image: url("/frontend/src/assets/village_photo.jpeg");
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: white;
+    /* color: white; */
     padding: 100px 20px;
   }
   
