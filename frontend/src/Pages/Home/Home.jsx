@@ -1,4 +1,3 @@
-// src/pages/Home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
@@ -44,10 +43,45 @@ const Home = () => {
         <p>We believe in creating self-sufficient communities where villagers have the tools and knowledge to improve their quality of life.</p>
       </section>
 
-      <section className="community-section">
-        <h2>Join Our Community</h2>
-        <p>Stay connected with upcoming programs, workshops, and events that promote growth and development in our village.</p>
-        <Link to="/events" className="events-btn">Upcoming Events</Link>
+      {/* New Section: Impact Stats */}
+      <section className="statistics-section">
+        <h2>Our Impact</h2>
+        <div className="statistics-cards">
+          <div className="stat-card">
+            <h3>500+</h3>
+            <p>Farmers trained with modern techniques</p>
+          </div>
+          <div className="stat-card">
+            <h3>1,000+</h3>
+            <p>Children educated through digital platforms</p>
+          </div>
+          <div className="stat-card">
+            <h3>250+</h3>
+            <p>New jobs created in rural communities</p>
+          </div>
+        </div>
+      </section>
+
+      {/* New Section: Testimonials */}
+      <section className="testimonials-section">
+        <h2>What Villagers Say</h2>
+        <div className="testimonials">
+          <blockquote>
+            <p>"The healthcare services provided by the Smart Village System saved my life. I am forever grateful!"</p>
+            <cite>- Ramesh, Farmer</cite>
+          </blockquote>
+          <blockquote>
+            <p>"Thanks to the new educational programs, my children have access to quality education right from our village."</p>
+            <cite>- Savita, Teacher</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* New Section: Call to Action */}
+      <section className="join-section">
+        <h2>Become a Volunteer</h2>
+        <p>Join hands with us to contribute to the growth and development of rural communities.</p>
+        <Link to="/join-us" className="join-btn">Join Us</Link>
       </section>
 
       <footer className="footer">

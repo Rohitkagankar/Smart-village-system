@@ -1,172 +1,149 @@
-/* Home.css */
-
 .home-page {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    max-width: 1200px;
-    margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+}
+
+.home-header {
+  background-image: url("/frontend/src/assets/village_photo.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+}
+
+.home-header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.5rem;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.contact-btn:hover {
+  background-color: #e68900;
+}
+
+.key-services-section, .about-section, .statistics-section, .testimonials-section, .join-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.key-services-section h2, .about-section h2, .statistics-section h2, .testimonials-section h2, .join-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.services-cards, .statistics-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card, .stat-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+}
+
+.card h3, .stat-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.card p, .stat-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.learn-more-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.learn-more-btn:hover {
+  background-color: #1976d2;
+}
+
+.testimonials blockquote {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.testimonials cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.join-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.join-btn:hover {
+  background-color: #388e3c;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-media-links {
+  margin-top: 10px;
+}
+
+.social-media-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .services-cards, .statistics-cards {
+    flex-direction: column;
   }
-  
-  .home-header {
-    background-image: url("/frontend/src/assets/village_photo.jpeg");
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    /* color: white; */
-    padding: 100px 20px;
-  }
-  
-  .home-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .home-header p {
-    font-size: 1.5rem;
-  }
-  
-  .contact-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ff9800;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .contact-btn:hover {
-    background-color: #e68900;
-  }
-  
-  .key-services-section {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .key-services-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .services-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    flex: 1;
-  }
-  
-  .card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  .learn-more-btn {
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #2196f3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
-  .learn-more-btn:hover {
-    background-color: #1976d2;
-  }
-  
-  .about-section {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #fafafa;
-  }
-  
-  .about-section h2 {
-    font-size: 2rem;
+
+  .card, .stat-card {
     margin-bottom: 20px;
   }
-  
-  .about-section p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .community-section {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .community-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .community-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .events-btn {
-    padding: 10px 15px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
-  .events-btn:hover {
-    background-color: #388e3c;
-  }
-  
-  .footer {
-    padding: 20px;
-    background-color: #222;
-    color: white;
-    text-align: center;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
-  .social-media-links {
-    margin-top: 10px;
-  }
-  
-  .social-media-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-  }
-  
-  .social-media-links a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .services-cards {
-      flex-direction: column;
-    }
-  
-    .card {
-      margin-bottom: 20px;
-    }
-  }
-  
+}
