@@ -82,6 +82,42 @@ const EconomicDevelopment = () => {
         </div>
       </section>
 
+      <section className="environmental-sustainability-section">
+        <h2>Environmental Sustainability</h2>
+        <div className="service-cards">
+          <div className="card">
+            <h3>Waste Management</h3>
+            <p>Introduce waste management programs that promote recycling, composting, and proper waste disposal practices.</p>
+          </div>
+          <div className="card">
+            <h3>Water Conservation</h3>
+            <p>Develop water conservation initiatives, such as rainwater harvesting and water-efficient irrigation techniques.</p>
+          </div>
+          <div className="card">
+            <h3>Green Energy Solutions</h3>
+            <p>Encourage the adoption of green energy solutions like solar power and biogas for household and community use.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="education-and-training-section">
+        <h2>Education and Training</h2>
+        <div className="service-cards">
+          <div className="card">
+            <h3>Skill Development Programs</h3>
+            <p>Organize skill development workshops that enhance literacy, technical knowledge, and vocational skills.</p>
+          </div>
+          <div className="card">
+            <h3>Online Learning Resources</h3>
+            <p>Provide access to online learning platforms to promote continuous education in remote areas.</p>
+          </div>
+          <div className="card">
+            <h3>Mentorship Programs</h3>
+            <p>Introduce mentorship programs that connect experienced professionals with villagers for guidance and support.</p>
+          </div>
+        </div>
+      </section>
+
       <section className="contact-section">
         <h2>Contact Us</h2>
         <p>For any economic development assistance or inquiries, feel free to contact us at:</p>
