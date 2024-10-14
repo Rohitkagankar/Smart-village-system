@@ -1,4 +1,3 @@
-// src/pages/Education.js
 import React from 'react';
 import './Education.css';
 
@@ -73,6 +72,34 @@ const Education = () => {
             <p>A local college offering undergraduate courses in arts, science, and commerce streams.</p>
           </div>
         </div>
+      </section>
+
+      <section className="testimonial-section">
+        <h2>Testimonials</h2>
+        <div className="testimonials">
+          <div className="testimonial">
+            <p>"The online courses helped my child excel in mathematics. I couldn't be happier!"</p>
+            <span>- Parent of a Primary School Student</span>
+          </div>
+          <div className="testimonial">
+            <p>"I completed my tailoring course here and now run my own shop. Grateful for the support!"</p>
+            <span>- Vocational Training Graduate</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="faq-section">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <ul className="faq-list">
+          <li>
+            <strong>What types of online courses do you offer?</strong>
+            <p>We offer courses for school education, higher education, and skill development.</p>
+          </li>
+          <li>
+            <strong>How do I enroll in the skill development programs?</strong>
+            <p>You can sign up through our website or contact us for more details.</p>
+          </li>
+        </ul>
       </section>
 
       <section className="contact-section">

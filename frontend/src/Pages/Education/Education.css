@@ -1,94 +1,138 @@
-/* Education.css */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
 
+/* Education Page Styles */
 .education-page {
-    font-family: 'Arial', sans-serif;
-    margin: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .education-header {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #2196f3;
-    color: white;
-  }
-  
-  .education-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .education-header p {
-    font-size: 1.2rem;
-  }
-  
-  .online-courses-section, .skill-development-section, .gov-schemes-section, .local-institutions-section, .contact-section {
-    margin: 40px 0;
-  }
-  
-  .online-courses-section h2, .skill-development-section h2, .gov-schemes-section h2, .local-institutions-section h2, .contact-section h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .courses-cards, .skill-cards, .institutions-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    flex: 1;
-  }
-  
-  .card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 1rem;
-    color: #666;
-  }
-  
-  .gov-schemes-section ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-  }
-  
-  .gov-schemes-section ul li {
-    font-size: 1.2rem;
-    margin: 10px 0;
-  }
-  
-  .contact-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #e3f2fd;
-    border-radius: 8px;
-  }
-  
-  .contact-section p {
-    font-size: 1.1rem;
-  }
-  
-  @media (max-width: 768px) {
-    .courses-cards, .skill-cards, .institutions-cards {
-      flex-direction: column;
-    }
-  
-    .card {
-      margin-bottom: 20px;
-    }
-  }
-  
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.education-header {
+  text-align: center;
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.education-header h1 {
+  font-size: 2.5rem;
+}
+
+.education-header p {
+  font-size: 1.2rem;
+}
+
+.online-courses-section, 
+.skill-development-section,
+.gov-schemes-section,
+.local-institutions-section,
+.testimonial-section,
+.faq-section,
+.contact-section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Card Styles */
+.courses-cards, .skill-cards, .institutions-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Government Schemes Styles */
+.gov-schemes-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.gov-schemes-section li {
+  font-size: 1.2rem;
+  background-color: #e0f7fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #004080;
+}
+
+/* Testimonials Section */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-left: 5px solid #004080;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* FAQ Styles */
+.faq-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.faq-list li {
+  margin-bottom: 20px;
+}
+
+.faq-list li p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #004080;
+  color: white;
+}
+
+.contact-section p {
+  margin: 5px 0;
+}
