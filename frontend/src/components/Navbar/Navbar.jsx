@@ -23,6 +23,12 @@ const Navbar = () => {
         <li>
           <Link to="/economic-development">Economic Development</Link>
         </li>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
+        <li>
+          <Link to="/profile">Profile</Link>
+        </li>
       </ul>
       <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
         {isMobile ? <i className="fa fa-times"></i> : <i className="fa fa-bars"></i>}
