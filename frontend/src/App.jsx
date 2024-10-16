@@ -7,6 +7,7 @@ import Education from './Pages/Education/Education.jsx';
 import Healthcare from './Pages/Healthcare/Healthcare.jsx';
 import EconomicDevelopment from './Pages/EconomicDevelopment/EconomicDevelopment.jsx';
 import Home from './Pages/Home/Home.jsx';
+import Login from './Pages/Login/Login.jsx';  // Import the Login component
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/education" element={<Education />} />
         <Route path="/healthcare" element={<Healthcare />} />
         <Route path="/economic-development" element={<EconomicDevelopment />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
