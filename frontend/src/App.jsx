@@ -21,7 +21,7 @@ function App() {
         <Route path="/healthcare" element={<Healthcare />} />
         <Route path="/economic-development" element={<EconomicDevelopment />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} /> {/* Add signup route */}
+        <Route path="/signup" element={<Signup />} /> 
       </Routes>
     </Router>
   );
