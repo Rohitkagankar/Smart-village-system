@@ -1,7 +1,7 @@
 // src/Pages/Signup/Signup.jsx
 import React, { useState } from 'react';
 import './Signup.css';
-
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +24,7 @@ const Signup = () => {
   };
 
   return (
-    <div>
+    <div className='main'>
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -59,6 +59,9 @@ const Signup = () => {
         </div>
         <button type="submit">Sign Up</button>
       </form>
+      <div className="login-option">
+        <p>Already have an account? <Link to="/login">Login here</Link></p>
+      </div>
     </div>
   );
 };
